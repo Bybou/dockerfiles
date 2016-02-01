@@ -1,0 +1,10 @@
+#!/bin/bash
+
+groupadd -g ${GID} sonarr && useradd -M -g sonarr -u ${UID} -s /bin/bash sonarr
+
+chown -R sonarr:sonarr /config
+chown -R sonarr:sonarr /opt/*
+
+echo "starting sonarr"
+su - sonarr -c "mono /opt/NzbDrone/NzbDrone.exe --no-browser -data=/config/"
+echo "stopping sonarr"RUB_CMDLINE_LINUX="cgroup_enable=memory swapaccount=1"
