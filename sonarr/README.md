@@ -6,7 +6,7 @@ The easiest way to use this is probably a fig file:
 sonarr:
   image: bybou/sonarr - Installs from Sonarr master repository
   environment:
-    - UID=your-own-uid // User with good rights on folder
+    - UID=your-own-uid - User with good rights on folder below
     - GID=your-own-gid 
   volumes:
     - /config - Sonarr configuration data files
