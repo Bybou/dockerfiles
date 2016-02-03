@@ -1,7 +1,7 @@
 FROM debian:wheezy
 MAINTAINER bybou <https://github.com/Bybou>
 
-ENV UID=991 GID=911
+ENV UID=1000 GID=1000
 
 RUN export DEBIAN_FRONTEND=noninteractive && \
   apt-key adv --keyserver keyserver.ubuntu.com --recv-keys FDA5DFFC && \
