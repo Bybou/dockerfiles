@@ -32,10 +32,13 @@ URI access : http://XX.XX.XX.XX:5000
 ### Advanced launch
 ```shell
 docker run -d -p 9117:5000 \
-	-e UID=1000 \
-	-e GID=1000 \
+	-e UID=500 \
+	-e GID=600 \
 	-v /your/config/path/jackett:/home/jackett/.config/Jackett \
 	--restart always \
 	bybou/jackett
 ```
 URI access : http://XX.XX.XX.XX:9117
+
+### Updating
+To update successfully, you have to delete your jackett container and launch the command docker run. It will pull a new image with the latest version of jackett.
