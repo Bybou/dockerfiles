@@ -1,4 +1,4 @@
-# Docker Jackett
+# Docker Jackett v0.7.172
 
 ## Description
 What is [jackett](https://github.com/Jackett/Jackett) ?
