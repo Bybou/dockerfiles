@@ -12,4 +12,4 @@ EXPOSE 8181
 
 WORKDIR /opt/plexpy
 
-CMD ["usr/bin/tini","--","/usr/bin/python", "PlexPy.py", "--datadir=/data"]
+CMD ["/usr/bin/tini","--","/usr/bin/python", "PlexPy.py", "--datadir=/data"]
