@@ -1,4 +1,4 @@
-FROM xataz/alpine:3.3
+FROM xataz/alpine:3.3-tini
 MAINTAINER bybou <https://github.com/bybou>
 
 ENV UID=1000 GID=1000
@@ -14,4 +14,4 @@ EXPOSE 5000
 ADD startup /usr/bin/startup
 RUN chmod +x /usr/bin/startup
 
-CMD ["startup"]
+CMD ["/usr/bin/tini","--","startup"]
